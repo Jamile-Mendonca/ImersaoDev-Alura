@@ -8,4 +8,13 @@ var notaFinal = (notaDoPrimeiroBimestre + notaDoSegundoBimestre + notaDoTerceiro
 
 var notaFixada = notaFinal.toFixed(1)
 
+var status = ""
+if (notaFixada >= 6) {
+  status = "Aprovado"
+} else {
+  status = "Reprovado"
+}
 console.log(notaFixada)
+
+document.write("<p>" + notaFixada + "</p>")
+document.write("<p>" + status + "</p>")
