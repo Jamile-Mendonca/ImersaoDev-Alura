@@ -1,15 +1,42 @@
-<div class="container">
-  <h1 class="page-title">
-    Conversor de moedas
-  </h1>
-  <p class="page-subtitle">
-    Descubra os valores em real R$, Dólar, Euro, Libra e Bitcoin!
-  </p>
-  <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
-  <label for="moeda">Insira o valor</label><br>
-  <input type="number" id="valor" size="2" /><br>
-  <button type="submit" onclick="Converter()">Converter</button>
-  <h2 id="valorConvertido"></h2>
-</div>
-<a href="https://alura.com.br/" target="_blank">
-  <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+<html>
+
+<head>
+  <script type="text/javascript" src="./Aula2-ConversorMoedas copy.js"></script>
+  <link rel="stylesheet" href="./Aula2-ConversorMoedas copy.css" />
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="page-title">
+      Conversor de Moedas
+    </h1>
+    <p class="page-subtitle">
+      Converta de Real para Bitcoin, Dólar, Euro ou Libra!
+    </p>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+      class="page-logo" alt=""><br><br>
+    <label for="moeda">Insira o valor em Real (R$)</label><br>
+    <input type="number" id="valor" size="2" /><br>
+    <label for="moeda">Para qual moeda deseja converter?</label><br>
+
+    <p>
+      <input type="radio" name="moeda" value="bitcoin" checked /> Bitcoin
+      <input type="radio" name="moeda" value="dolar" /> Dólar
+      <input type="radio" name="moeda" value="euro" /> Euro
+      <input type="radio" name="moeda" value="libra" /> Libra
+    </p>
+    <p> <button type="button" id="btnConverter" onclick="Converter()">Converter</button></p>
+
+
+    <h2 id="valorConvertido"></h2>
+  </div>
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+
+
+
+</body>
+
+</html>
